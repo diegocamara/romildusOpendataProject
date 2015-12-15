@@ -1,0 +1,20 @@
+{
+  "development": {
+    "dialect": "mongodb",
+    "storage": "localhost:27017/romildusdb"
+  },
+  "test":{
+    "username": "root",
+    "password": "1234567",
+    "database": "productdeliverydb",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production":{
+    "username": "root",
+    "password": "1234567",
+    "database": "productdeliverydb",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
