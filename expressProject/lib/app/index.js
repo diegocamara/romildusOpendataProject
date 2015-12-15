@@ -1,10 +1,14 @@
 var express = require('express');
+var cors = require('cors');
 var cfg = require('_/config');
 
 var app = express();
 
 app.set('views', cfg.viewDir);
 app.set('view engine', 'jade');
+
+app.use(cors());
+
 app.locals.cfg = cfg;
 
 // middleware

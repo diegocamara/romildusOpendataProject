@@ -4,6 +4,6 @@ var controllers = require('./controllers');
 
 router.get('/', controllers.index);
 
-router.get('/testing', controllers.testing);
+router.get('/getcatrs', controllers.obterCategorias);
 
 module.exports = router;
