@@ -1,0 +1,34 @@
+[
+    {
+        "descricao": "Bares e Restaurantes",
+        "label": "bareres"
+    },
+    {
+        "descricao": "Centros de Compras",
+        "label": "centcomp"
+    },
+    {
+        "descricao": "Feiras Livres",
+        "label": "feliv"
+    },
+    {
+        "descricao": "Hóteis",
+        "label": "hotel"
+    },
+    {
+        "descricao": "Mercados Públicos",
+        "label": "merpu"
+    },
+    {
+        "descricao": "Museus",
+        "label": "museu"
+    },
+    {
+        "descricao": "Pontes do Recife",
+        "label": "ponte"
+    },
+    {
+        "descricao": "Teatros",
+        "label": "teatro"
+    }
+]
