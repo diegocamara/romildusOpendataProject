@@ -1,9 +1,5 @@
 var models = require('../models');
 
-exports.index = function(req, res){
-  res.render('index');
-}
-
 exports.obterCategorias = function(req, res){
 
     models.Categoria.find(function(err, data){
@@ -15,5 +11,35 @@ exports.obterCategorias = function(req, res){
       res.send(data);
 
     });
+
+}
+
+exports.obterLocaisBaresERestaurantes = function(req, res){
+
+  var page = parseInt(req.query.page);
+  var size = parseInt(req.query.size);
+  var skip = (page > 0) ? (page - 1) * size : 0
+
+  models.Restaurante.find(null, null,
+    {skip:skip,
+     limit:size
+    },function(err, data){
+
+        models.Restaurante.count(function(err, count){
+
+        if(err){
+          throw err;
+        }
+
+        var result = {
+          numeroDeRegistros:count,       
+          resultado: data
+        }
+
+        res.send(result);
+
+      });
+
+  });
 
 }

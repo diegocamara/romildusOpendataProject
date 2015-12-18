@@ -14,7 +14,7 @@ var db = {};
 
 loader(__dirname, function(file){
   var model = require(path.join(__dirname, file));
-  db[model.modelName] = model;
+  db[model.modelName] = model;  
 });
 
 db.mongoose = mongoose;
